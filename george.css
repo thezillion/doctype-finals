@@ -82,3 +82,27 @@
 		transform: translateX(-100%);
 	}
 }
+
+.features-container{
+	text-align: center;
+	padding:20px;
+}
+.feature-box{
+	text-align: center;
+	padding: 10px;
+	width: 150px;
+	display: inline-block;
+    background: rgba(0,0,0,0.4);
+    color: #ffffff;
+    margin: 0px 20px;
+}
+
+
+.feature-img{
+	font-size: 70px;
+}
+
+.feature-text{
+	display: block;
+	margin-top: 20px;
+}
