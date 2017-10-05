@@ -253,3 +253,11 @@ body {
     }
   }
 }
+
+.modal {
+  color: dimgrey;
+
+  .modal-content {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}

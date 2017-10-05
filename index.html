@@ -30,6 +30,7 @@
 						</a>
 					</div>
 			</div>
+			<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Buy</button>
 			<div class="ticker-container col-lg-12">
 			  <span class="ticker-text">DALAL BULL</span>
 			  <div class="col-lg-10 ticker-marquee">
@@ -301,7 +302,6 @@
 		</div>
 		<div class="modal fade" id="myModal" role="dialog">
 		  <div class="modal-dialog">
-		  <!-- Modal content-->
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -309,14 +309,41 @@
 		      </div>
 		      <div class="modal-body">
 		        <div>
-		          <label>Company</label>
-		          <input></input><br/>
-		          <label>Quantity</label>
-		          <input placeholder="..."></input><br/>
-		          <label>Buy/Shortsell</label>
-		          <input type="number"></input><br/>
-		          <label>Desired price</label>
-		          <input placeholder="..."></input><br/>
+							<div class="row">
+								<div class="col-lg-6">
+									<label>Company</label>
+								</div>
+								<div class="col-lg-6">
+									<input></input>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-6">
+									<label>Quantity</label>
+								</div>
+								<div class="col-lg-6">
+									<input></input>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-6">
+									<label>Buy/Shortsell</label>
+								</div>
+								<div class="col-lg-6">
+									<input></input>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-6">
+									<label>Desired price</label>
+								</div>
+								<div class="col-lg-6">
+									<input placeholder="..."></input>
+								</div>
+							</div>
 		        </div>
 		        <div
 		          <h4>TRANSACTION DETAILS</h4>
