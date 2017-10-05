@@ -1,0 +1,33 @@
+.leaderboard-container{
+}
+
+.image{
+  height: 40px;
+  width: 30px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+.leaderboard{
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.fl{
+  float: left;
+}
+
+.text{
+  margin-left: 15px;
+}
+
+.border{
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: #D3D3D3;
+}
+.leaderboard-box{
+  background-color:  rgba(0, 0, 0, 0.3);
+}
