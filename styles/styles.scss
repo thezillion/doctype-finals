@@ -255,9 +255,44 @@ body {
 }
 
 .modal {
-  color: dimgrey;
+  color: white;
 
   .modal-content {
     background: rgba(0, 0, 0, 0.7);
+  }
+
+  input {
+    background: rgba(0,0,0,.3);
+    padding: 5px;
+    border: 1px solid grey;
+    margin-bottom: 5px;
+  }
+}
+
+.features-container{
+	text-align: center;
+	padding:20px;
+  border-bottom: 1px solid rgba(255, 255, 255, .4);
+
+  .feature-box{
+  	text-align: center;
+  	padding: 10px;
+  	width: 130px;
+  	display: inline-block;
+      background: rgba(0,0,0,0.4);
+      color: #ffffff;
+      margin: 0px 20px;
+    cursor: pointer;
+  }
+
+
+  .feature-img{
+  	font-size: 60px;
+  }
+
+  .feature-text{
+  	display: block;
+  	margin-top: 20px;
+    font-size: 10px;
   }
 }
