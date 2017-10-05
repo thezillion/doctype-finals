@@ -4,6 +4,44 @@ body {
   color: white;
 }
 
+.header-container{
+	padding: 5px;
+
+
+  .notifications-corner{
+  	float: right;
+  }
+
+  .notifications,
+  .messages{
+  	font-size: 22px;
+  	margin: 10px;
+  	vertical-align: middle;
+  	color: #ffffff;
+  }
+
+  .profile{
+  	margin: 10px;
+
+    &:hover{
+    	text-decoration: none;
+    }
+  }
+
+  .usr-img{
+  	height: 50px;
+  }
+
+  .usr-name{
+  	font-family: sans-serif;
+  	font-size: 15px;
+  	text-decoration: none;
+  	margin: 5px;
+  	color: #ffffff;
+  }
+
+}
+
 .stats-container {
   padding: 1em 0;
   border-bottom: 1px solid #595959;
@@ -13,7 +51,7 @@ body {
       background: rgba(0,0,0,0.4);
       margin: 0 .2em;
       padding: 2em 0em;
-      .col-lg-4 {
+      > div {
         h3 {
           margin: 0;
           font-size: 1.5em;
