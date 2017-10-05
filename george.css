@@ -1,0 +1,35 @@
+.header-container{
+	padding: 5px;
+}
+
+.notifications-corner{
+	float: right;
+}
+
+.notifications,
+.messages{
+	font-size: 22px;
+	margin: 10px;
+	vertical-align: middle;
+	color: #ffffff;
+}
+
+.profile{
+	margin: 10px;
+}
+
+.usr-img{
+	height: 50px;
+}
+
+.usr-name{
+	font-family: sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+	margin: 5px;
+	color: #ffffff;
+}
+
+.usr-name:hover{
+	text-decoration: none;
+}
