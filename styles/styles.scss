@@ -1,7 +1,12 @@
+* {
+  transition: .5s;
+}
+
 body {
   background-image: url(../img/background.png);
   background-size: 100% 100%;
   color: white;
+  overflow-x: hidden;
 }
 
 .header-container{
@@ -10,6 +15,11 @@ body {
 
   .notifications-corner{
   	float: right;
+
+    @media (max-width: 500px) {
+      float: none;
+      text-align: center;
+    }
   }
 
   .notifications,
@@ -55,6 +65,7 @@ body {
   	float: right;
   	overflow: hidden;
   	margin-right: 10px;
+    width: calc(100% - 200px);
   }
 
   .ticker{
@@ -129,6 +140,53 @@ body {
 
 .poop-container {
   padding: 0;
+
+  > .row {
+    margin: 0;
+  }
+
+  .graph-container {
+    @media (max-width: 500px) {
+      margin-top: 27em;
+    }
+  }
+
+  .leaderboard-container{
+    .image{
+      height: 40px;
+      width: 30px;
+      padding-bottom: 3px;
+      padding-top: 3px;
+    }
+
+    .leaderboard{
+      padding-left: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 0;
+    }
+
+    .fl{
+      float: left;
+    }
+
+    .text{
+      margin-left: 15px;
+    }
+
+    .border{
+      border-bottom-style: solid;
+      border-width: thin;
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+    .leaderboard-box{
+      background-color:  rgba(0, 0, 0, 0.3);
+      padding: 6px 9px;
+      margin: 0;
+    }
+  }
+
 }
 
 
@@ -149,5 +207,45 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     border: none;
     border-radius: 0px;
+  }
+}
+
+.dock-container {
+  position: fixed;
+  bottom: -65px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+
+  @media (max-width: 700px) {
+    i {
+      font-size: 0.5em;
+    }
+  }
+
+  &:hover {
+    bottom: 0px;
+  }
+
+  .dock-harbringer {
+    i {
+      font-size: 2em;
+      color: rgba(255, 255, 255, 0.4);
+    }
+    padding-bottom: 1em;
+  }
+
+  .dock {
+
+    display: inline-block;
+    margin: 0 auto;
+    padding-bottom: 0.8em;
+
+    img {
+      width: 40px;
+      margin-right: 3em;
+      fill: red;
+      cursor: pointer;
+    }
   }
 }
