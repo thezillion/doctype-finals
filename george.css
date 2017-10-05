@@ -106,3 +106,44 @@
 	display: block;
 	margin-top: 20px;
 }
+
+.notifications-container{
+	-webkit-perspective: 500px; /* Chrome, Safari, Opera */
+    	perspective: 500px;
+	/*animation: bounce 1s ease-in-out;*/
+}
+
+.notification-card{
+	width: 100%;
+	background: rgba(0,0,0,0.4);
+	padding: 10px;
+	border-style: solid;
+	border-width: 0px 0px 1px;
+	border-color: #000000;
+}
+
+.notification-det{
+	display: inline-block;
+	padding: 0px 5px;
+}
+
+.notification-usr-name,
+.notification-time{
+	color: #909090;
+}
+
+.notification-mes{
+	display: block;
+	color: #ffffff;
+}
+
+@keyframes bounce{
+	0%{
+		-webkit-perspective: 500px; /* Chrome, Safari, Opera */
+    	perspective: 500px;
+	}
+	100%{
+		-webkit-perspective: 500px; /* Chrome, Safari, Opera */
+    	perspective: 500px;
+	}
+}
