@@ -33,3 +33,52 @@
 .usr-name:hover{
 	text-decoration: none;
 }
+
+.ticker-container{
+	color: #ffffff;
+}
+
+.ticker-text{
+	margin-left: 10px;
+}
+
+.ticker-marquee{
+	float: right;
+	overflow: hidden;
+	margin-right: 10px;
+}
+
+.ticker{
+	white-space: nowrap;
+	animation: marquee 10s linear infinite;
+}
+
+.stock{
+	display: inline-block;
+	margin: 0px 5px;
+}
+
+.stock-name{
+	text-transform: uppercase;
+}
+
+.stock-stat{
+	display: inline-block;
+}
+
+.stock-stat.green{
+	color: green;
+}
+
+.stock-stat.red{
+	color: red;
+}
+
+@keyframes marquee{
+	0%{
+		transform: translateX(0%);
+	}
+	100%{
+		transform: translateX(-100%);
+	}
+}
