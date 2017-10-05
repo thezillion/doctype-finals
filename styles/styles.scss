@@ -42,9 +42,62 @@ body {
 
 }
 
+.ticker-container{
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-width: 1px 0;
+  margin-top: 0.9em;
+
+  .ticker-text{
+  	margin-left: 10px;
+  }
+
+  .ticker-marquee{
+  	float: right;
+  	overflow: hidden;
+  	margin-right: 10px;
+  }
+
+  .ticker{
+  	white-space: nowrap;
+  	animation: marquee 10s linear infinite;
+  }
+
+  .stock{
+  	display: inline-block;
+  	margin: 0px 5px;
+  }
+
+  .stock-name{
+  	text-transform: uppercase;
+  }
+
+  .stock-stat{
+  	display: inline-block;
+  }
+
+  .stock-stat.green{
+  	color: green;
+  }
+
+  .stock-stat.red{
+  	color: red;
+  }
+
+  @keyframes marquee{
+  	0%{
+  		transform: translateX(0%);
+  	}
+  	100%{
+  		transform: translateX(-100%);
+  	}
+  }
+
+}
+
+
 .stats-container {
   padding: 1em 0;
-  border-bottom: 1px solid #595959;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 1em;
   .col-lg-3 {
     .row {
